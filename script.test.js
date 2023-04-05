@@ -92,3 +92,21 @@ test('Analyze empty array', () => {
 test('Analyze empty array', () => {
     expect(analyzeArray([]).length).toEqual(0);
 });
+
+let object = analyzeArray([1, 8, 3, 4, 2, 6]);
+
+test('Analyze empty array', () => {
+    expect(object.average).toEqual(4);
+});
+
+test('Analyze empty array', () => {
+    expect(object.min).toEqual(1);
+});
+
+test('Analyze empty array', () => {
+    expect(object.max).toEqual(8);
+});
+
+test('Analyze empty array', () => {
+    expect(object.length).toEqual(6);
+});
