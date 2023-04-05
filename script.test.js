@@ -1,4 +1,10 @@
-import { capitalize, reverseString, calculator, caesarCipher } from './script';
+import {
+    capitalize,
+    reverseString,
+    calculator,
+    caesarCipher,
+    analyzeArray,
+} from './script';
 
 test('Capitalize a lowercase word', () => {
     expect(capitalize('test')).toBe('Test');
@@ -66,5 +72,5 @@ test('cypher word with capital letter', () => {
 });
 
 test('Test for multiple words and punctuacion', () => {
-    expect(caesarCipher('Attack at dawn!', 5)).toBe('Fyyfhp fy ifbs!');
+    expect(caesarCipher('Attack at dawn!', 7)).toBe('Haahjr ha khdu!');
 });
