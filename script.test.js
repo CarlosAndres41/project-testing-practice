@@ -36,7 +36,7 @@ test('Reverse a multiple words, including punctuation', () => {
 
 // Calculator
 test('sum', () => {
-    expect(calculator.sum(2, 4)).toEqual(4);
+    expect(calculator.sum(2, 4)).toEqual(6);
 });
 
 test('subtract', () => {
