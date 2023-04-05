@@ -26,4 +26,6 @@ let calculator = {
     multiply: (a, b) => a * b,
 };
 
-export { capitalize, reverseString, calculator };
+function caesarCipher(string, shift) {}
+
+export { capitalize, reverseString, calculator, caesarCipher };

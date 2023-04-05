@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator } from './script';
+import { capitalize, reverseString, calculator, caesarCipher } from './script';
 
 test('Capitalize a lowercase word', () => {
     expect(capitalize('test')).toBe('Test');
@@ -53,4 +53,10 @@ test('multiply', () => {
 
 test('divide float', () => {
     expect(calculator.divide(10, 3)).toBeCloseTo(3.33);
+});
+
+// Caesar cypher
+
+test('cyher one word', () => {
+    expect(caesarCipher('defend')).toBe(efgfoe);
 });
