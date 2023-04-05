@@ -26,6 +26,16 @@ let calculator = {
     multiply: (a, b) => a * b,
 };
 
-function caesarCipher(string, shift) {}
+function caesarCipher(string, shift) {
+    let low = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+    let up = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        if (low.includes(string[i])) {
+            result += low[low.indexOf(string[i]) + shift];
+        }
+    }
+    return result;
+}
 
 export { capitalize, reverseString, calculator, caesarCipher };
