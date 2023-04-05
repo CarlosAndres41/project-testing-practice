@@ -57,6 +57,10 @@ test('divide float', () => {
 
 // Caesar cypher
 
-test('cyher one word', () => {
+test('cypher one word', () => {
     expect(caesarCipher('defend', 1)).toBe('efgfoe');
+});
+
+test('cypher word with capital letter', () => {
+    expect(caesarCipher('Attack', 5)).toBe('Fyyfhp');
 });

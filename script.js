@@ -33,6 +33,8 @@ function caesarCipher(string, shift) {
     for (let i = 0; i < string.length; i++) {
         if (low.includes(string[i])) {
             result += low[low.indexOf(string[i]) + shift];
+        } else if (up.includes(string[i])) {
+            result += up[up.indexOf(string[i]) + shift];
         }
     }
     return result;
