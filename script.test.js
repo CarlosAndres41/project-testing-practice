@@ -1,4 +1,4 @@
-import { capitalize } from './script';
+import { capitalize, reverseString } from './script';
 
 test('Capitalize a lowercase word', () => {
     expect(capitalize('test')).toBe('Test');
@@ -18,4 +18,10 @@ test('Capitalize the first letter of a sentence', () => {
 
 test('Check for punctuation', () => {
     expect(capitalize('test for punctuation.')).toBe('Test for punctuation.');
+});
+
+// Reverse String
+
+test('Reverse a word', () => {
+    expect(reverseString('Test')).toBe('tseT');
 });

@@ -11,4 +11,6 @@ function capitalize(string) {
     return result;
 }
 
-export { capitalize };
+function reverseString(string) {}
+
+export { capitalize, reverseString };
