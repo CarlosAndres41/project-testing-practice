@@ -35,6 +35,8 @@ function caesarCipher(string, shift) {
             result += low[low.indexOf(string[i]) + shift];
         } else if (up.includes(string[i])) {
             result += up[up.indexOf(string[i]) + shift];
+        } else {
+            result += string[i];
         }
     }
     return result;

@@ -64,3 +64,7 @@ test('cypher one word', () => {
 test('cypher word with capital letter', () => {
     expect(caesarCipher('Attack', 5)).toBe('Fyyfhp');
 });
+
+test('Test for multiple words and punctuacion', () => {
+    expect(caesarCipher('Attack at dawn!', 5)).toBe('Fyyfhp fy ifbs!');
+});
