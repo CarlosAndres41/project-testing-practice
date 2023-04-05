@@ -50,3 +50,7 @@ test('divide', () => {
 test('multiply', () => {
     expect(calculator.multiply(2, 4)).toEqual(8);
 });
+
+test('divide float', () => {
+    expect(calculator.divide(10, 3)).toBeCloseTo(3.33);
+});
