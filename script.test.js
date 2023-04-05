@@ -7,3 +7,15 @@ test('Capitalize a lowercase word', () => {
 test('Capitalize an uppercase word', () => {
     expect(capitalize('TEST')).toBe('Test');
 });
+
+test('Capitalize a multicase word', () => {
+    expect(capitalize('TeSt')).toBe('Test');
+});
+
+test('Capitalize the first letter of a sentence', () => {
+    expect(capitalize('test for a sentence')).toBe('Test for a sentence');
+});
+
+test('Check for punctuation', () => {
+    expect(capitalize('test for punctuation.')).toBe('Test for punctuation.');
+});
