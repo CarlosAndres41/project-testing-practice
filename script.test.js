@@ -25,3 +25,11 @@ test('Check for punctuation', () => {
 test('Reverse a word', () => {
     expect(reverseString('Test')).toBe('tseT');
 });
+
+test('Reverse multiple words', () => {
+    expect(reverseString('Test multiple')).toBe('elpitlum tseT');
+});
+
+test('Reverse a multiple words, including punctuation', () => {
+    expect(reverseString('Test multiple.')).toBe('.elpitlum tseT');
+});
