@@ -74,3 +74,21 @@ test('cypher word with capital letter', () => {
 test('Test for multiple words and punctuacion', () => {
     expect(caesarCipher('Attack at dawn!', 7)).toBe('Haahjr ha khdu!');
 });
+
+// Analyze array
+
+test('Analyze empty array', () => {
+    expect(analyzeArray([]).average).toBeNaN();
+});
+
+test('Analyze empty array', () => {
+    expect(analyzeArray([]).min).toBe(Infinity);
+});
+
+test('Analyze empty array', () => {
+    expect(analyzeArray([]).max).toBe(-Infinity);
+});
+
+test('Analyze empty array', () => {
+    expect(analyzeArray([]).length).toEqual(0);
+});
