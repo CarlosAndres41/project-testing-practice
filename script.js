@@ -19,4 +19,6 @@ function reverseString(string) {
     return result;
 }
 
-export { capitalize, reverseString };
+let calculator = {};
+
+export { capitalize, reverseString, calculator };

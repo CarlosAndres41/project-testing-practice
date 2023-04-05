@@ -1,4 +1,4 @@
-import { capitalize, reverseString } from './script';
+import { capitalize, reverseString, calculator } from './script';
 
 test('Capitalize a lowercase word', () => {
     expect(capitalize('test')).toBe('Test');
@@ -32,4 +32,21 @@ test('Reverse multiple words', () => {
 
 test('Reverse a multiple words, including punctuation', () => {
     expect(reverseString('Test multiple.')).toBe('.elpitlum tseT');
+});
+
+// Calculator
+test('sum', () => {
+    expect(calculator.sum(2, 4)).toEqual(4);
+});
+
+test('subtract', () => {
+    expect(calculator.subtract(2, 4)).toEqual(-2);
+});
+
+test('divide', () => {
+    expect(calculator.divide(10, 2)).toEqual(5);
+});
+
+test('multiply', () => {
+    expect(calculator.multiply(2, 4)).toEqual(8);
 });
